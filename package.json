@@ -1,0 +1,25 @@
+{
+  "name": "k8listns-ts",
+  "version": "1.0.0",
+  "description": "Accessing to Kubernetes cluster using JS/TypeScript",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/index.js",
+    "build": "rm -rf build && mkdir build && node_modules/typescript/bin/tsc",
+    "bundle": "rm -rf dist && mkdir dist && webpack"
+  },
+  "keywords": [
+    "kubernetes",
+    "devops-tools"
+  ],
+  "author": "Arturo Fernandez",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@kubernetes/client-node": "^0.11.2",
+    "ts-loader": "^7.0.3",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
